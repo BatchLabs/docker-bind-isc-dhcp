@@ -1,0 +1,14 @@
+;
+; BIND data file for TLD ".tld"
+;
+$TTL	604800
+@	IN	SOA.tld. root.tld. (
+			      0		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@	  IN	NS	ns.tld.
+@	  IN	A	10.0.0.1
+ns	  IN	A	10.0.0.1
