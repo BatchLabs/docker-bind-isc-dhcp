@@ -8,12 +8,11 @@ This docker spawns a DHCP and DNS server, to assign IP addresses and FQDN to hos
 
 # Usage
 
-* Generate rndc-key with `/usr/sbin/rndc-confgen -a`, output should be : 
-    * ```
-        wrote key file "/etc/bind/rndc.key"
-```
+* Generate rndc-key with `/usr/sbin/rndc-confgen -a`, output should be `wrote key file "/etc/bind/rndc.key"`
+
 
 * Put the generated key in :
+
 ```
 conf/bind/named.conf.local
 conf/bind/rndc.key
